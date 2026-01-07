@@ -1,3 +1,5 @@
+<h1><span data-teams="true">Final</span></h1>
+<p><span data-teams="true"><a href="https://youtu.be/SFSpLCPelPU" title="888">https://youtu.be/SFSpLCPelPU</a></span></p>
 <h1>About</h1>
 <p>上課內容<a href="https://youtu.be/4EKoB-QZMko?si=tSNL-rqJ39OSUOFD">https://youtu.be/4EKoB-QZMko?si=tSNL-rqJ39OSUOFD</a></p>
 <p>憤怒鳥:<a href="https://youtu.be/jKjQRzoPDwY?si=vhvxGWJRWMEdvMJ3">https://youtu.be/jKjQRzoPDwY?si=vhvxGWJRWMEdvMJ3ㄒ</a></p>
@@ -14,7 +16,8 @@
 <p style="padding-left: 60px;">w17 (<span style="background-color: #ccffcc;">1b 採 Youtube 影片簡報</span>): 計算機程式課程學到了什麼？</p>
 <p style="padding-left: 60px;">w18: 課程總結</p>
 <p style="padding-left: 30px;"><span style="background-color: #ffff00;">個人與分組網站維護 (40%)</span> - 每週至少兩次推送與課程進度相關的學習內容與心得。</p>
-<p style="padding-left: 60px;">w9 期中自評、w18 期末自評</p><h1>球球大挑戰</h1>
+<p style="padding-left: 60px;">w9 期中自評、w18 期末自評</p>
+<h1>球球大挑戰</h1>
 <p>挑戰你的反應！紅球移動極快，藍球速度中等。點擊它們獲得高分！</p>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/brython/3.10.7/brython.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/brython/3.10.7/brython_stdlib.min.js"></script>
@@ -238,7 +241,8 @@ def start_game():
     time_handle = timer.set_interval(check_time, 1000)
 
 start_game()
-</script><h1>Brython</h1>
+</script>
+<h1>Brython</h1>
 <p><a href="https://brython.info/">Brython</a> 是一個將 <a href="https://en.wikipedia.org/wiki/Python_(programming_language)">Python</a> 語法編譯為 <a href="https://developer.mozilla.org/zh-TW/docs/Web/JavaScript">JavaScript</a> 的工具，能直接在瀏覽器中以 <a href="https://en.wikipedia.org/wiki/Python_(programming_language)">Python</a> 撰寫前端網頁程式。</p>
 <p><button id="add1to100">1 add to 100</button><button id="robot1">機器人巡邏</button><button id="free_walk">自由行</button></p>
 <!-- 導入 brython 程式庫 -->
@@ -533,7 +537,8 @@ doc["aitetris"].bind("click", aitetris.do)
 <p><!-- Brython 程式執行的結果, 都以 brython_div1 作為切入位置 --></p>
 <div id="brython_div2"></div>
 <!-- editor2 結束 --><hr/>
-<p></p><h2>Pyodide3</h2>
+<p></p>
+<h2>Pyodide3</h2>
 <p>Pyodide3 則在 <a href="https://mde.tw/cp2025/content/Pyodide.html">Pyodide</a> 與 <a href="https://mde.tw/cp2025/content/Pyodide2.html">Pyodide2</a> 頁面架構下，進一步導入 <a href="https://gist.githubusercontent.com/mdecycu/ec4bb35dd0769e7a83d2a9fa57878a67/raw/9f43571ec070ea3e24b083525ee27275a96efcc8/robot_w_world.py">robot_w_world.py</a>，在既有的水平圍牆 <a href="https://mde.tw/cp2025/reeborg/src/images/north.png">north.png</a> 與垂直圍牆 <a href="https://mde.tw/cp2025/reeborg/src/images/east.png">east.png</a> 檔案之外，加入 <a href="https://mde.tw/cp2025/reeborg/src/images/carrot.png">carrot.png</a>、<a href="https://mde.tw/cp2025/reeborg/src/images/grass.png">grass.png</a> 與 <a href="https://mde.tw/cp2025/reeborg/src/images/pale_grass.png">pale_grass.png</a> 等圖檔。並且擴充可從 URL 讀進 json 格式的 world 變數功能，以便製作出更多元的場景任務，要求機器人執行。</p>
 <p>其中 src URL 變數，可以將網路上的機器人控制程式導入 Pyodide3 頁面外，world URL 變數則可以導入源自 <a href="https://mde.tw/reeborg">Reeborg</a> 機器人程式所設定的 json 格式場景。</p>
 <p>由於 Reeborg 系統中的 png 圖檔均非透明背景，<a href="https://gist.githubusercontent.com/mdecycu/ec4bb35dd0769e7a83d2a9fa57878a67/raw/9f43571ec070ea3e24b083525ee27275a96efcc8/robot_w_world.py">robot_w_world.py</a> 必須利用 HTML 中的 CANVAS，將關鍵的白色背景，以透明的方式顯示。</p>
